@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="left">
+        <div class="home bg-gray p-20 b-8 flex-col">
+            <div class="cancelbtn">
+                <img src="assets/cancel.svg" alt="" width="30px">
+            </div>
+            <img src="assets\logo.svg" alt="Spotify">
+            <div class="items">
+                <img src="assets\home.svg" alt="Home" class="h-25">
+                <span>Home</span>
+            </div>
+            <div class="items">
+                <img src="assets\search.svg" alt="Search" class="h-25">
+                <span>Search</span>
+            </div>
+        </div>
+        <div class="library bg-gray p-20 b-8 flex-col">
+            <div class="items">
+                <img src="assets\library.svg" alt="your library" class="h-25">
+                <span>Your Library</span>
+                <img src="assets\plus.svg" alt="add" class="plus h-25">
+            </div>
+            <div class="songs">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="lib-footer">
+                <ul>
+                    <li>Legal</li>
+                    <li>Safety & Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Ads</li>
+                    <li>Accessibilty</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="header bg-gray p-20 b-8">
+            <div class="hamburger">
+                <img src="assets/hamburger.svg" alt="" width="45px">
+            </div>
+            <div class="arrows">
+                <span class="arrow">
+                    <img src="assets\arrow-left.svg" alt="left" class="h-25">
+                </span>
+                <span class="arrow">
+                    <img src="assets\arrow-right.svg" alt="right" class="h-25">
+                </span>
+            </div>
+            <div class="buttons">
+                <button class="signup bg-gray">Sign up</button>
+                <button class="login">Log in</button>
+            </div>
+        </div>
+        <div class="playlists bg-gray p-20 b-8">
+            <h2>Spotify Playlists</h2>
+            <div class="cardContainer">
+                
+            </div>
+        </div>
+        <div class="songsbar">
+            <div class="songinfo"></div>
+            <div class="songbarbuttons">
+                <img id="previous" src="assets\previous.svg" alt="" class="h-25">
+                <img id="play" src="assets\play.svg" alt="" class="h-25">
+                <img id="next" src="assets\next.svg" alt="" class="h-25">
+            </div>
+            <div class="songtime"></div>
+            <div class="volume">
+                <img id="volume" src="assets/volume.svg" alt="" class="h-25">
+                <input type="range" name="volume" id="volslider">
+            </div>
+            <div class="slider">
+                <div class="pointer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

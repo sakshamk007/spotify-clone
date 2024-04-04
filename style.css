@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+}
+
+:root {
+    --a: 0;
+}
+
+.bg-gray {
+    background-color: #121212;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    width: 25vw;
+    height: 100%;
+}
+
+.right {
+    width: 75vw;
+    height: 100%;
+    position: relative;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.b-8 {
+    border-radius: 8px;
+}
+
+.home {
+    height: 18%;
+    margin: 8px 4px;
+
+}
+
+.library {
+    height: 68%;
+    position: relative;
+    margin: 8px 4px;
+
+}
+
+.playlists {
+    height: 70%;
+    margin: 8px 4px;
+
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.h-25 {
+    height: 25px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.plus {
+    position: absolute;
+    right: 20px;
+}
+
+.lib-footer {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.lib-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+}
+
+.header {
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 8px 4px;
+
+}
+
+.arrows {
+    display: flex;
+    gap: 5px;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.signup {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.signup:hover {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.login {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 0px 25px;
+    border-radius: 30px;
+}
+
+.login:hover {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+.cardContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden auto;
+    max-height: 90%;
+}
+
+.card {
+    height: 260px;
+    width: 180px;
+    padding: 6px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #373636;
+    --a: 1;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.play-btn {
+    position: absolute;
+    right: -60px;
+    bottom: 95px;
+    height: 40px;
+    opacity: var(--a);
+    transition: all 0.6s ease-out;
+}
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    /* Dark color for the thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+    /* Dark color for the track */
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.songs {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 70%;
+    overflow: hidden auto;
+}
+
+.song {
+    height: 50px;
+    width: 90%;
+    margin: 4px;
+    padding: 4px 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+
+    li {
+        list-style: none;
+    }
+}
+
+.songDetails {
+    width: 60%;
+}
+
+.songsbar {
+    background-color: green;
+    width: 99.5%;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: black;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.slider {
+    height: 4px;
+    width: 96%;
+    background-color: white;
+    position: absolute;
+    left: 2%;
+    bottom: 14%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pointer {
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -4px;
+    left: 0%;
+}
+
+.songinfo {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songbarbuttons {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.songtime {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+.volume{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    right: 22%;
+}
+
+#volslider{
+    cursor: pointer;
+}
+
+#previous,
+#play,
+#next {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.cancelbtn {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .left {
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        width: 100vw;
+        height: 96vh;
+        background-color: black;
+        transition: all 0.4s;
+    }
+
+    .home,
+    .library,
+    .header,
+    .playlists {
+        margin: 12px 0px 12px 12px;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .cancelbtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .songsbar{
+        margin-left: 30px;
+    }
+
+    .songinfo {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .playlists{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardContainer{
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        height: 320px;
+        width: 260px;
+    }
+
+    .volume{
+        bottom: 65%;
+        right: 7%;
+    }
+
+    .volume img{
+        height: 20px;
+    }
+
+    #volslider{
+        height: 4px;
+        width: 100px;
+    }
+}
